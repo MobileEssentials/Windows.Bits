@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivationPausedMessage" xml:space="preserve">
+    <value>The activation has been paused and it's been delayed until the application is closed.</value>
+  </data>
+  <data name="ActivationTaskForManifestInInvalidState" xml:space="preserve">
+    <value>The activation task for the manifest '{0}' cannot begin in its current state '{1}'.</value>
+  </data>
+  <data name="AddFileLabel" xml:space="preserve">
+    <value>Add file</value>
+  </data>
+  <data name="ApplicationDeployProcessor" xml:space="preserve">
+    <value>Application Deploy</value>
+  </data>
+  <data name="ApplicationIdCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Application Id cannot be null or empty.</value>
+  </data>
+  <data name="ArgumentMissing" xml:space="preserve">
+    <value>The expected argument was not provided.</value>
+  </data>
+  <data name="ArgumentMissing1" xml:space="preserve">
+    <value>The specified value for then argument '{0}' has some invalid value.</value>
+  </data>
+  <data name="AssemblyReferenceExpected" xml:space="preserve">
+    <value>Expecting options and assemblyFile or assemblyName values.</value>
+  </data>
+  <data name="BITSCannotConnectToJob" xml:space="preserve">
+    <value>The BITSDownloader cannot connect to the job '{0}' for the task '{1}' so a new BITS job will be created.</value>
+  </data>
+  <data name="BitsDescription" xml:space="preserve">
+    <value>Updater: Download the Server XML File.</value>
+  </data>
+  <data name="BitsDownloadedNotConfigured" xml:space="preserve">
+    <value>The BitsDownloader client configuration is missing. You must provide this configuration in order to use this downloader.</value>
+  </data>
+  <data name="BitsDownloaderFailedDownload" xml:space="preserve">
+    <value>The downloader failed to synchronously download the files for the manifest '{0}'.</value>
+  </data>
+  <data name="BitsDownloaderNode" xml:space="preserve">
+    <value>BITSDownloader</value>
+  </data>
+  <data name="BitsFilesDownloadDescription" xml:space="preserve">
+    <value>BITS_Files_Download_Job</value>
+  </data>
+  <data name="BitsFilesDownloadJobName" xml:space="preserve">
+    <value>BITS_Files_Download_Job</value>
+  </data>
+  <data name="BitsJobName" xml:space="preserve">
+    <value>Updater job.</value>
+  </data>
+  <data name="BrowseForSourceFolderDescription" xml:space="preserve">
+    <value>Please, specify the Source Folder where the files specified in this manifest are located.</value>
+  </data>
+  <data name="BrowseForWorkingFolderDialogText" xml:space="preserve">
+    <value>Browse for the folder from where you are going to add the files.</value>
+  </data>
+  <data name="CallerIsNotUpdaterService" xml:space="preserve">
+    <value>This method can only be invoked by non Windows service clients.</value>
+  </data>
+  <data name="CannotCreateDefaultDownloader" xml:space="preserve">
+    <value>The Downloader Manager is unable to locate and/or create the default downloader instance.</value>
+  </data>
+  <data name="CannotCreateDownloader" xml:space="preserve">
+    <value>The Downloader Manager is unable to locate and/or create the downloader instance.</value>
+  </data>
+  <data name="CannotFindActivationTaskForManifest" xml:space="preserve">
+    <value>There's no activation task for the manifest with Id '{0}'.</value>
+  </data>
+  <data name="CannotFindDotNetFolder" xml:space="preserve">
+    <value>Cannot find the .NET Framework root folder.</value>
+  </data>
+  <data name="CannotFindTool" xml:space="preserve">
+    <value>Cannot find the '{0}' executable.</value>
+  </data>
+  <data name="CantCreateAlgorithmProvider" xml:space="preserve">
+    <value>Cannot create the hash algorithm for the provider '{0}'.</value>
+  </data>
+  <data name="CommandUnsupported" xml:space="preserve">
+    <value>The command '{0}' is unsupported.</value>
+  </data>
+  <data name="ConfirmOperationTitle" xml:space="preserve">
+    <value>Confirm operation</value>
+  </data>
+  <data name="CreateNewText" xml:space="preserve">
+    <value>Create a new </value>
+  </data>
+  <data name="CultureIdToGetComErrorStringsFormatted" xml:space="preserve">
+    <value>1033</value>
+  </data>
+  <data name="DefaultManifestUriMissing" xml:space="preserve">
+    <value>There is no default Uri specified in the configuration for downloading the manifest.</value>
+  </data>
+  <data name="DownloaderMenuItem" xml:space="preserve">
+    <value>Downloader</value>
+  </data>
+  <data name="DownloadersMenuItem" xml:space="preserve">
+    <value>Downloaders</value>
+  </data>
+  <data name="DownloadTimeoutExceeded" xml:space="preserve">
+    <value>The specified wait time for the download has been exceeded. The download has been aborted.</value>
+  </data>
+  <data name="DuplicatedManifestId" xml:space="preserve">
+    <value>Primary manifest contains 2 or more included manifests with the same id.</value>
+  </data>
+  <data name="EditorControlNotConfigured" xml:space="preserve">
+    <value>There's not configured control to edit the configuration settings for the processor '{0}'.</value>
+  </data>
+  <data name="EditorMissingApplicationId" xml:space="preserve">
+    <value>You must complete the Application Id field in the Application Properties tab</value>
+  </data>
+  <data name="EditorMissingApplicationLocation" xml:space="preserve">
+    <value>You must complete the Application Location field in the Application Properties tab</value>
+  </data>
+  <data name="EditorMissingManifestDescription" xml:space="preserve">
+    <value>You must complete a description for this manifest in the Manifest Properties tab</value>
+  </data>
+  <data name="EditorMissingManifestId" xml:space="preserve">
+    <value>You must complete a Manifest ID for this manifest in the Manifest Properties tab</value>
+  </data>
+  <data name="EditorValidationErrorCaption" xml:space="preserve">
+    <value>Validation error</value>
+  </data>
+  <data name="FileCopyProcessor" xml:space="preserve">
+    <value>File Copy</value>
+  </data>
+  <data name="FileCopyProcessorSourceFileNotExists" xml:space="preserve">
+    <value>The specified source file, expanded to the local file '{0}' cannot be found. </value>
+  </data>
+  <data name="FileDeleteProcessor" xml:space="preserve">
+    <value>File Delete</value>
+  </data>
+  <data name="FileHashIsNull" xml:space="preserve">
+    <value>Hash value for the file specified in manifest cannot be null if hash comparison is enabled. Hash value for file {0} is null.</value>
+  </data>
+  <data name="FileNotExists" xml:space="preserve">
+    <value>The file '{0}' doesn't exist.</value>
+  </data>
+  <data name="FolderCopyProcessor" xml:space="preserve">
+    <value>Folder Copy</value>
+  </data>
+  <data name="FolderDeleteProcessor" xml:space="preserve">
+    <value>Folder Delete</value>
+  </data>
+  <data name="GacUtilProcessor" xml:space="preserve">
+    <value>GAC Util</value>
+  </data>
+  <data name="GacUtilProcessor_CantFindGacUtilExecutable" xml:space="preserve">
+    <value>Cannot find the InstallUtil executable.</value>
+  </data>
+  <data name="GacUtilProcessor_ProcessorIsNotConfiguredActionsEtcNotFound" xml:space="preserve">
+    <value>The processor is not configured. Specify the values for the 'options' and either the 'assemblyName' or 'assemblyFile' attributes.</value>
+  </data>
+  <data name="GacUtilProcessor_ProcessorIsNotConfiguredOptionsNotFound" xml:space="preserve">
+    <value>Expecting options and assemblyFile or assemblyName values.</value>
+  </data>
+  <data name="GetSetApplicationBasePath" xml:space="preserve">
+    <value>Gets or sets the application base path.</value>
+  </data>
+  <data name="GetSetApplicationIdentifier" xml:space="preserve">
+    <value>Gets or sets the application identifier.</value>
+  </data>
+  <data name="GetSetAuthenticationScheme" xml:space="preserve">
+    <value>The authentication scheme to use against the server.</value>
+  </data>
+  <data name="GetSetAuthenticationType" xml:space="preserve">
+    <value>Gets or sets the authentication type to retrieve the manifest.</value>
+  </data>
+  <data name="GetSetDownloaderTypeName" xml:space="preserve">
+    <value>Gets the downloader type name.</value>
+  </data>
+  <data name="GetSetManifestLocation" xml:space="preserve">
+    <value>Gets or sets the manifest location.</value>
+  </data>
+  <data name="GetSetManifestSettings" xml:space="preserve">
+    <value>Gets or sets the manifest settings.</value>
+  </data>
+  <data name="GetSetPassword" xml:space="preserve">
+    <value>The password for the user to use for the authentication scheme.</value>
+  </data>
+  <data name="GetSetServerType" xml:space="preserve">
+    <value>The type of server with which to authenticate.</value>
+  </data>
+  <data name="GetSetUpdaterServiceInterval" xml:space="preserve">
+    <value>Gets or sets the update interval for the application updater service.</value>
+  </data>
+  <data name="GetSetUserName" xml:space="preserve">
+    <value>The name for the user to use for the authentication scheme.</value>
+  </data>
+  <data name="HashValidationProcessor" xml:space="preserve">
+    <value>Hash Validation</value>
+  </data>
+  <data name="IncompleteCommandWasIssued" xml:space="preserve">
+    <value>An incomplete command has been issued.</value>
+  </data>
+  <data name="InstallUtilProcessor" xml:space="preserve">
+    <value>Install Util</value>
+  </data>
+  <data name="InstallUtilProcessor_CantFindDotNetFxRootFolder" xml:space="preserve">
+    <value>Cannot find the .NET Framework root folder.</value>
+  </data>
+  <data name="InstallUtilProcessor_CantFindInstallUtilExecutable" xml:space="preserve">
+    <value>Cannot find the InstallUtil executable.</value>
+  </data>
+  <data name="InstallUtilProcessor_InstallUtilReturnedAnError" xml:space="preserve">
+    <value>The tool returned an error.</value>
+  </data>
+  <data name="InstallUtilProcessor_ProcessorIsNotConfiguredActionNotFound" xml:space="preserve">
+    <value>The processor is not configured. Specify the value for the 'action' attribute.</value>
+  </data>
+  <data name="InstallUtilProcessor_ProcessorIsNotConfiguredAssembliesNotFound" xml:space="preserve">
+    <value>The processor is not configured. Specify the list of assemblies to process.</value>
+  </data>
+  <data name="InvalidProcessorItemForEdition" xml:space="preserve">
+    <value>The selected editor '{1}' cannot configure this type of items '{0}'.</value>
+  </data>
+  <data name="InvalidSourceFolderCaption" xml:space="preserve">
+    <value>Cannot locate the manifest files.</value>
+  </data>
+  <data name="InvalidSourceFolderMessage" xml:space="preserve">
+    <value>Without setting the correct Source Folder for the manifest files, the manifest you are trying to open can't be edited. A new manifest will be open instead.</value>
+  </data>
+  <data name="LocationCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Manifest location Uri cannot be null or empty.</value>
+  </data>
+  <data name="ManifestAlreadyIncluded" xml:space="preserve">
+    <value>There already a manifest with id '{0}' included.</value>
+  </data>
+  <data name="ManifestEditorCannotChangeFolder" xml:space="preserve">
+    <value>Cannot change the source folder to the selected folder. You can only change the current value to any parent folder.</value>
+  </data>
+  <data name="ManifestEditorFilesNotAdded" xml:space="preserve">
+    <value>Some files could not be added because they aren't under the specified Source Folder.</value>
+  </data>
+  <data name="ManifestFilesFilter" xml:space="preserve">
+    <value>Manifest Files|*.xml|All files|*.*</value>
+  </data>
+  <data name="ManifestManagerMustBeValidId" xml:space="preserve">
+    <value>Must be a valid ID.</value>
+  </data>
+  <data name="ManifestManagerNode" xml:space="preserve">
+    <value>Manifest manager</value>
+  </data>
+  <data name="ManifestManager_HashValueIsNull" xml:space="preserve">
+    <value>Hash value for the file specified in manifest cannot be null if hash comparison is enabled. Hash value for file {0} is null.</value>
+  </data>
+  <data name="ManifestManager_InvalidDocument" xml:space="preserve">
+    <value>The document {0} doesn't comply with the schema {1}.</value>
+  </data>
+  <data name="ManifestManager_PrimaryManifestDoesNotContains" xml:space="preserve">
+    <value>Primary manifest contains 2 or more included manifests with the same id.</value>
+  </data>
+  <data name="ManifestProviderMenuItem" xml:space="preserve">
+    <value>Manifest Manager</value>
+  </data>
+  <data name="ManifestSchemaError" xml:space="preserve">
+    <value>The document {0} doesn't comply with the schema {1}</value>
+  </data>
+  <data name="ManifestValidationTitle" xml:space="preserve">
+    <value>Open validation</value>
+  </data>
+  <data name="MissingManifestEditorConfiguration" xml:space="preserve">
+    <value>In order to configure the available processors you need to add the '{0}' configuration section to the ManfestEditor configuration file.</value>
+  </data>
+  <data name="MissingManifestEditorConfigurationTitle" xml:space="preserve">
+    <value>Missing manifest editor configuration section.</value>
+  </data>
+  <data name="MissingManifestUri" xml:space="preserve">
+    <value>There is no suitable configuration to get the URI for downloading the manifest.</value>
+  </data>
+  <data name="MSIProcessor" xml:space="preserve">
+    <value>MSI</value>
+  </data>
+  <data name="MsiProcessor_CantFindThePatchPackage" xml:space="preserve">
+    <value>Cannot find the Patch package to apply.</value>
+  </data>
+  <data name="MSIProcessor_CantFindTheProductCodeToRemove" xml:space="preserve">
+    <value>Cannot find the ProductCode to remove..</value>
+  </data>
+  <data name="MustSpecifyValidValueForArgument" xml:space="preserve">
+    <value>Must specify a valid value for the command argument.</value>
+  </data>
+  <data name="NoConfigurationToGetApplicationId" xml:space="preserve">
+    <value>There is no configuration available for initializing ApplicationId</value>
+  </data>
+  <data name="NoString" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OpenCryptographyConfigurationFilter" xml:space="preserve">
+    <value>Configuration File|*.config</value>
+  </data>
+  <data name="OpenCryptographyConfigurationLabel" xml:space="preserve">
+    <value>Open cryptography configuration</value>
+  </data>
+  <data name="OpenManifestTitle" xml:space="preserve">
+    <value>Open a manifest</value>
+  </data>
+  <data name="PathDoesNotExists" xml:space="preserve">
+    <value>The specified path not exists {0}.</value>
+  </data>
+  <data name="PathExpected" xml:space="preserve">
+    <value>Expecting path value.</value>
+  </data>
+  <data name="ProcessorAlreadyIncluded" xml:space="preserve">
+    <value>There is already a processor with the specified name '{0}'.</value>
+  </data>
+  <data name="ProcessorNotConfigured" xml:space="preserve">
+    <value> The processor is not configured. Values for some attributes are missing.</value>
+  </data>
+  <data name="ProcessorOnErrorException" xml:space="preserve">
+    <value>The processor '{0}' OnError() method failed.</value>
+  </data>
+  <data name="ReadyString" xml:space="preserve">
+    <value>Ready.</value>
+  </data>
+  <data name="RESX_DateTimeToStringFormat" xml:space="preserve">
+    <value>yyyy_MM_dd_HH:mm:ss</value>
+  </data>
+  <data name="RESX_DateTimeToStringFormatLogFile" xml:space="preserve">
+    <value>yyyy_MM_dd_HH_mm_ss</value>
+  </data>
+  <data name="RESX_MESSAGE_UpdaterStarted" xml:space="preserve">
+    <value>The Updater has started; the target application's name is '{0}'.  Time started:  {1}.</value>
+  </data>
+  <data name="RESX_MESSAGE_UpdaterStopped" xml:space="preserve">
+    <value>The Updater is stopping updates for the application named '{0}'.  Time stopped:  {1}.</value>
+  </data>
+  <data name="RES_CantCreateInstanceOfTypeAssembly" xml:space="preserve">
+    <value>Can't create the instance for the type '{0}' on the assembly {1}.</value>
+  </data>
+  <data name="RES_CantLoadAssembly" xml:space="preserve">
+    <value>The assembly '{0}' can't be loaded.  
+		Check that the assembly uses the FULLY QUALIFIED NAME, which consists of the assembly name, version, culture, and PublicKeyToken.</value>
+  </data>
+  <data name="RES_CantLoadTypeForAssembly" xml:space="preserve">
+    <value>The type '{0}' can't be loaded within the assembly {1}.</value>
+  </data>
+  <data name="RES_ClientXmlFileMustExist" xml:space="preserve">
+    <value>The configuration file '{0}' 
+		defines an invalid path at the node client/xmlFile; 
+		the invalid value is '{1}', this file must exist.</value>
+  </data>
+  <data name="RES_CLSID_BackgroundCopyManager" xml:space="preserve">
+    <value>4991D34B-80A1-4291-83B6-3328366B9097</value>
+  </data>
+  <data name="RES_CouldNotFindCryptographicKey" xml:space="preserve">
+    <value>The key passed to the Validator was null.  
+		Check to be sure that the XML path "validator/key" is correct and that the key node contains a valid cryptographic key 
+		for the type of Validator being used.  A common error is to nest the key too deeply giving the Validator an unexpected XML structure. 
+		Other errors include: giving the wrong kind of key, encoding the key incorrectly, or omitting the key entirely.</value>
+  </data>
+  <data name="RES_ErrorDownloadingJob" xml:space="preserve">
+    <value>Error downloading files from the server for the application '{0}', 
+		the following message was in the exception: '{0}'.</value>
+  </data>
+  <data name="RES_ErrorInitializingDownloader" xml:space="preserve">
+    <value>Error initializing Downloader provider: 
+		type: '{0}', 
+		assembly: '{1}'.</value>
+  </data>
+  <data name="RES_ErrorInitializingValidator" xml:space="preserve">
+    <value>Error initializing Validator provider, 
+		type:'{0}', 
+		assembly:'{1}'.</value>
+  </data>
+  <data name="RES_ExceptionExtendedFormatIncorrectDayOfWeekPart" xml:space="preserve">
+    <value>The day of week part must be an integer between 0 and 6.</value>
+  </data>
+  <data name="RES_ExceptionExtendedFormatIncorrectDayPart" xml:space="preserve">
+    <value>The day part must be an integer between 0 and 31.</value>
+  </data>
+  <data name="RES_ExceptionExtendedFormatIncorrectHourPart" xml:space="preserve">
+    <value>The hour part must be an integer between 0 and 23.</value>
+  </data>
+  <data name="RES_ExceptionExtendedFormatIncorrectMinutePart" xml:space="preserve">
+    <value>The minute part must be an integer between 0 and 59.</value>
+  </data>
+  <data name="RES_ExceptionExtendedFormatIncorrectMonthPart" xml:space="preserve">
+    <value>The month part must be an integer between 0 and 12.</value>
+  </data>
+  <data name="RES_ExceptionInvalidConfigurationDocument" xml:space="preserve">
+    <value>The configuration document is not a well-formed xml document.</value>
+  </data>
+  <data name="RES_ExceptionInvalidExtendedFormatArguments" xml:space="preserve">
+    <value>The extended format is invalid. Cache expiration time must be specified.</value>
+  </data>
+  <data name="RES_EXCEPTION_ArgumentInvalidHexFormat" xml:space="preserve">
+    <value>The string argument is an invalid format.</value>
+  </data>
+  <data name="RES_EXCEPTION_BadTypeArgumentInFactory" xml:space="preserve">
+    <value>When attempting to process a FULLY QUALIFIED TYPE AND ASSEMBLY NAME, there were fewer than FIVE total comma-delimited parts.  Check
+		 the configuration file, and be sure that the type and assembly attribute contents are correct. The assembly must specify NAME, VERSION, CULTURE, PUBLICKEYTOKEN.
+		   Instead what was specified was: 
+		   '{0}', '{1}', '{2}', '{3}', '{4}'.
+		   </value>
+  </data>
+  <data name="RES_EXCEPTION_BaseDirMustExist" xml:space="preserve">
+    <value>The configuration file at '{0}' contains an invalid value for the client/baseDir node.
+		The path given for the client's base directory was '{1}'; this path does not exist.
+		Be sure the baseDir exists on the client.</value>
+  </data>
+  <data name="RES_EXCEPTION_BitsBackgroundCopyError" xml:space="preserve">
+    <value>The BITS service returned an error for the job with the ID '{0}'; 
+		the job's name and description are '{1}' and '{2}'.  
+		The BITS service error message for this job is 
+		'{3}'.
+		This job has been canceled, and the DownloaderManager will attempt it again.  If you see this error frequently, you may have a mis-configuration, or another 
+		administrator process/user is canceling BITS jobs.
+		It is also possible that some mis-configuration of the Manifest file is causing BITS to have trouble with a source or destination path; 
+		be sure that all SOURCE paths are valid URLs, and that all DESTINATION paths are valid LOCAL UNC paths--__shares are not allowed__.</value>
+  </data>
+  <data name="RES_EXCEPTION_BitsOtherError" xml:space="preserve">
+    <value>The BITS downloader experienced an unexpected error.  It may have been asked to check job status for a job ID that no longer exists, 
+		or a job that was canceled.  The jobID was '{0}', the job name was '{1}', and the description was '{2}'.</value>
+  </data>
+  <data name="RES_EXCEPTION_CantCreateInstanceFromFilePath" xml:space="preserve">
+    <value>Could not create an instance of the type specified by its file name and interface to return.  The file name given was '{0}' and the expected interface was '{1}'.  Check
+		 the configuration file, and be sure that the path is correct.  Also check that the assembly specified by path has at least one type that implements the given interface.  
+		 Likewise, the TYPE that must be constructed must be specified by the FULL TYPE NAME, not just the class name.  Type names are NOT necessarily always just the "assembly.type" form; 
+		 type names depend on namespace, which may or may not be the same as the assembly name.</value>
+  </data>
+  <data name="RES_EXCEPTION_CantCreateInstanceUsingActivate" xml:space="preserve">
+    <value>Could not create an instance of the requested object in the Factory.  
+		Assembly = '{0}', 
+		Type = '{1}'.  
+		Check the configuration file--this is the most common source of this error.  
+		Assemblies must be specified by their FULLY QUALIFIED NAME, including name, version, culture, and public key token.  
+		Likewise, the TYPE that must be constructed must be specified by the FULL TYPE NAME, not just the class name.  
+		Type names are NOT necessarily just the "assembly.type" form; 
+		type names depend on namespace, which may or may not be the same as the assembly name.</value>
+  </data>
+  <data name="RES_EXCEPTION_CantLoadAssembly" xml:space="preserve">
+    <value>The assembly and type specified could not be loaded.  
+		The assembly name given is '{0}' 
+		and the type name given is '{1}'.  
+		Check to be SURE that the FULLY QUALIFIED ASSEMBLY NAME with assembly, version, culture, and PublicKeyToken is specified.  Check 
+		also that the type name is the FULL type name not the abbreviated type.  It is common to have incorrect versions or PublicKeyTokens, 
+		validate these and correct the config.  Likewise, the TYPE that must be constructed must be specified by the FULL TYPE NAME, 
+		not just the class name.  Type names are NOT necessarily just the "assembly.type" form; 
+		type names depend on namespace, which may or may not be the same as the assembly name.</value>
+  </data>
+  <data name="RES_EXCEPTION_CantRemoveMetadataFile" xml:space="preserve">
+    <value>The metadata file '{0}' can't be removed.</value>
+  </data>
+  <data name="RES_EXCEPTION_ConfigCantLoadInAUConstructor" xml:space="preserve">
+    <value>SecurityException thrown while trying to register with ProcessExit event.  Make sure the assembly/user have adequate permissions.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_CouldNotDeserializeClientApplicationInfo" xml:space="preserve">
+    <value>Could not deserialize an instance of ClientApplicationInfo:  
+		error message was '{0}'.  
+		The path to the Server Manifest was '{1}'.</value>
+  </data>
+  <data name="RES_EXCEPTION_CouldNotDeserializeServerApplicationInfo" xml:space="preserve">
+    <value>Could not deserialize an instance of ServerApplicationInfo:  
+		error message was '{0}'.  
+		The path to the Server Manifest was '{1}'.</value>
+  </data>
+  <data name="RES_EXCEPTION_DocumentNotValidated" xml:space="preserve">
+    <value>There was an error during validation of the configuration file.  
+		The configuration file MUST pass validation according to the schema; 
+		please check that the configuration is well-formed and valid, and that it conforms to the XSD schema.  
+		Also avoid white space within elements.  
+		The validation message was: '{0}'."
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_DuplicateApplicationName" xml:space="preserve">
+    <value>The application name '{0}' is a duplicate.  Application names must be unique to each Updater configuration file; 
+		if you wish to update multiple applications simultaneously, ensure that their names in the config file are unique.</value>
+  </data>
+  <data name="RES_EXCEPTION_ErrorSavingClientApplicationInfo" xml:space="preserve">
+    <value>Error while saving the ClientApplicationInfo object.  
+		This object corresponds to the 'AppStart.exe.config' file, and is used to update version and path information so that the 'shim' 
+		AppStart can find the newly updated application.  
+		The information passed in to Save this document was:  '{0}','{1}','{2}'.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_ErrorStopUpdater" xml:space="preserve">
+    <value>There was an error while stopping the Updater.  The application that was being stopped is named '{0}'.
+		This error often occurs when multiple threads attempt to stop the update at the same time.</value>
+  </data>
+  <data name="RES_EXCEPTION_MetadataCantBeDownloadedOrNotValid" xml:space="preserve">
+    <value>The metadata file (the Server Manifest) can't be downloaded for the application '{0}'.
+		Either the manifest is unavailable (check download URL in Updater config file), the downloader failed, or 
+		the Manifest failed validation.</value>
+  </data>
+  <data name="RES_EXCEPTION_PollingIntervalTooShort" xml:space="preserve">
+    <value>The polling interval is too short, it should be 60 seconds or more.  Setting it to less can cause problems with locked files, 
+		and may produce race conditions in which manifests are downloaded while other files are still in process.</value>
+  </data>
+  <data name="RES_EXCEPTION_ProcessingApplication" xml:space="preserve">
+    <value>Unexpected error processing application the '{0}', error message: '{1}'.</value>
+  </data>
+  <data name="RES_EXCEPTION_RunningIPP" xml:space="preserve">
+    <value>There was an error when attempting to start the processor.
+		The given processor had the following attributes:  
+		Path--'{0}'; 
+		Type--'{1}'; 
+		Assembly--'{2}'.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_ServiceAlreadyRunning" xml:space="preserve">
+    <value>The service is already running on this machine; please run only a single instance at a time.</value>
+  </data>
+  <data name="RES_EXCEPTION_SettingUpDownloadDirectories" xml:space="preserve">
+    <value>There was an error setting up the download directories; DownloaderManager was attempting to create the destination directories and had an exception.  
+		Check that the destination directories are reachable; that they are not locked; that the process has permission to access them; 
+		and that the paths given in the Updater configuration for this application point to directories which exist.
+		 The file source path causing the error was 
+		 '{0}', 
+		 and the destination path was '{1}'.</value>
+  </data>
+  <data name="RES_EXCEPTION_SigningFile" xml:space="preserve">
+    <value>Error signing the file at path '{0}'.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_SigningXml" xml:space="preserve">
+    <value>Error signing xml.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_StoppingIPP" xml:space="preserve">
+    <value>There was an error when stopping the processor thread named '{0}'.  
+		It was interrupted and threw a ThreadInterruptException; the message returned was: 
+		{1}.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_ThreadInterruptedException" xml:space="preserve">
+    <value>The thread named '{0}' had to be interrupted.
+		</value>
+  </data>
+  <data name="RES_EXCEPTION_UnauthorizedAccessDirectory" xml:space="preserve">
+    <value>There was an error when attempting to access a directory:
+		'{0}'.
+		The exception message was:
+		'{1}'.
+		Most often this occurs when the directory that is being deleted/overwritten is marked "Read-Only"; be sure this is not the case, 
+		or the Updater will not be able to manipulate this directory.</value>
+  </data>
+  <data name="RES_EXCEPTION_UnauthorizedAccessFile" xml:space="preserve">
+    <value>There was an error when attempting to access a file:
+		'{0}'.
+		The exception message was:
+		'{1}'.
+		Most often this occurs when the file that is being deleted/overwritten is marked "Read-Only"; be sure this is not the case, 
+		or the Updater will not be able to manipulate this file.</value>
+  </data>
+  <data name="RES_EXCEPTION_UncSourcePathToBits" xml:space="preserve">
+    <value>A UNC file path was used as the source for BITS downloading: 
+		'{0}'; this is invalid, source files for BITS must be URLs.  
+		Check the Server Manifest and be sure paths given to BITS as source paths are URLs.</value>
+  </data>
+  <data name="RES_EXCEPTION_UsingDownloader" xml:space="preserve">
+    <value>Unexpected error using the IDownloader of type '{0}' 
+		and from assembly '{1}' when a job was posted.</value>
+  </data>
+  <data name="RES_EXCEPTION_WaitedMoreThanTwicePollPeriod" xml:space="preserve">
+    <value>
+		The download job has waited {0} milliseconds for the download.
+		The affected application '{1}' waited more than twice the allotted polling period for this download;
+		it is canceling and restarting the update job.</value>
+  </data>
+  <data name="RES_FileNotDownloaded" xml:space="preserve">
+    <value>The file '{0}' cannot be downloaded. 
+		The failure occurred in the synchronous download method.  
+		The Server Manifest must be downloaded using this synchronous technique.  
+		It may be that the configuration file's 'maxWaitXmlFile' is too short.  Set it to at least 60,000 milliseconds 
+		(60 seconds; the value is expected to be in milliseconds).  
+		If you see this error repeatedly, it is probably because the wait timeout is too short, there are network problems, 
+		or the BITS service is not responding.  It may help to restart the BITS service.
+		It may also be that during debugging or under certain repetitive failures, the BITS services' "job queue" has become very 
+		large.  In this case, the BITS job queue should be flushed using the BITS COM interface.</value>
+  </data>
+  <data name="RES_GeneralUpdaterError" xml:space="preserve">
+    <value>A general error occurred updating the application '{0}'.</value>
+  </data>
+  <data name="RES_InvalidClientVersionInfo" xml:space="preserve">
+    <value>Invalid client version info '{0}'.</value>
+  </data>
+  <data name="RES_InvalidClientXmlFile" xml:space="preserve">
+    <value>The XML file on the client application is invalid (or incomplete), the following XPath must be satisfied: 
+		'/configuration/appUpdater/InstalledVersion'.</value>
+  </data>
+  <data name="RES_InvalidPathOnAppLauncher" xml:space="preserve">
+    <value>The configuration file '{0}' 
+		defines an invalid path at the node client/appLauncher, 
+		the invalid value is '{1}'.</value>
+  </data>
+  <data name="RES_InvalidPathOnBaseDir" xml:space="preserve">
+    <value>The configuration file '{0}' 
+		defines an invalid path at the node client/baseDir, 
+		the invalid value is '{1}'.</value>
+  </data>
+  <data name="RES_InvalidPathOnBaseDirMustBeRooted" xml:space="preserve">
+    <value>The configuration file '{0}' defines an invalid path at the node client/baseDir, 
+		the baseDir path must be rooted, 
+		the invalid value is '{1}'.</value>
+  </data>
+  <data name="RES_InvalidPathOnTempDir" xml:space="preserve">
+    <value>The configuration file '{0}' 
+		defines an invalid path at the node client/tempDir, 
+		the invalid value is '{1}'.</value>
+  </data>
+  <data name="RES_InvalidServerFileName" xml:space="preserve">
+    <value>The following file (to be downloaded as part of update) 
+		named '{0}' specified in the server XML (manifest) file is invalid.</value>
+  </data>
+  <data name="RES_InvalidServerVersionInfo" xml:space="preserve">
+    <value>Invalid server version info '{0}'.</value>
+  </data>
+  <data name="RES_InvalidServerXmlFile" xml:space="preserve">
+    <value>The XML file downloaded from the server is invalid (or incomplete), the following XPath must be satisfied: 
+		'/configuration/appUpdater/availableversion'.</value>
+  </data>
+  <data name="RES_InvalidServerXmlFileUpdateLocation" xml:space="preserve">
+    <value>The downloaded server XML file defines a URI that is invalid--'{0}'.</value>
+  </data>
+  <data name="RES_MESSAGE_CheckingOnUpdates" xml:space="preserve">
+    <value>Checking on updates for application '{0}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_ClientServerVersionCheck" xml:space="preserve">
+    <value>The version currently on the client for application '{0}' is {1} and the version on the server is {2}.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DeserializeServerApplicationInfo" xml:space="preserve">
+    <value>Reading Server Manifest file from '{0}' to deserialize into a ServerApplicationInfo object.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DeserializingClientApplicationInfo" xml:space="preserve">
+    <value>Reading the configuration file '{0}' to deserialize it into a ClientApplicationInfo object.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DestFileName" xml:space="preserve">
+    <value>  DEST FILE:  '{0}'  
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DnldJobStatusUpdated" xml:space="preserve">
+    <value>Status updated with job id '{0}' for the application '{1}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DownloadComplete" xml:space="preserve">
+    <value>
+Download Completed {0},{1},{2},{3},{4}.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DownloadingAppFiles" xml:space="preserve">
+    <value>Manifest downloaded, now commencing download of application files for application '{0}' 
+		to destination temporary folder '{1}'
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DownloadManifestCompleted" xml:space="preserve">
+    <value>Server Manifest successfully downloaded to location '{0}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_DownloadManifestStarted" xml:space="preserve">
+    <value>  DOWNLOAD STARTED:   Downloading manifest for the application '{0}'.  Time started: {1}
+		</value>
+  </data>
+  <data name="RES_MESSAGE_FileFailedValidation" xml:space="preserve">
+    <value>  FILE VALIDATION FAILED:    
+		The file '{0}' failed validation.  
+		Stopping validation, deleting all files to prevent questionable files from remaining.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_FilesMustBeUpdated" xml:space="preserve">
+    <value>The local files must be updated for the application '{0}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_FileValidated" xml:space="preserve">
+    <value>'{0}' PASSED VALIDATION.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_IPPWouldNotCast" xml:space="preserve">
+    <value>Able to instantiate putative IActivationProcessor, but it would not cast to IActivationProcessor interface.  
+		The file path for IPP was '{0}' 
+		and the discovered type is '{1}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_ManifestFailedValidation" xml:space="preserve">
+    <value>  MANIFEST VALIDATION FAILED:  
+		The server Manifest located at 
+		'{0}' failed validation.  
+		It is being deleted; its signature did not match the signature of the file that was downloaded.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_ManifestFileNotDownloaded" xml:space="preserve">
+    <value>The downloader failed to synchronously download a file with the path '{0}'.  
+		The cumulative error message generated during its attempts was: '{1}'.</value>
+  </data>
+  <data name="RES_MESSAGE_NoNewVersionOnServer" xml:space="preserve">
+    <value>There is no new version update available on the server for the application '{0}'
+		</value>
+  </data>
+  <data name="RES_MESSAGE_SavingClientApplicationInfo" xml:space="preserve">
+    <value>Now saving ClientApplicationInfo object to file '{0}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_SettingUpFileForDownload" xml:space="preserve">
+    <value>
+SOURCE: '{0}'
+DEST:   '{1}'
+		</value>
+  </data>
+  <data name="RES_MESSAGE_SourceFileName" xml:space="preserve">
+    <value>  SOURCE FILE:  '{0}'  
+		</value>
+  </data>
+  <data name="RES_MESSAGE_UpdaterLogCannotBeWritten" xml:space="preserve">
+    <value>The Updater Log file located at '{0}' cannot be opened to write to.  Check that the log file is in a directory that the user of Updater
+		 has access to, and be sure that the file itself can be created and written to by that user.  Also be sure there's enough disk space to 
+		 accommodate the log file.</value>
+  </data>
+  <data name="RES_MESSAGE_UpdaterLogDirectoryNotFound" xml:space="preserve">
+    <value>The logging file's directory specified in the configuration file does not exist.  
+		The path given was '{0}'; please ensure
+		that the log file's directory exists, or logging will not function.</value>
+  </data>
+  <data name="RES_MESSAGE_UpdatingLocalConfigFile" xml:space="preserve">
+    <value>Updating the local configuration file, probably AppStart.exe.config depending on mode of deployment, for the application '{0}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_ValidatingFiles" xml:space="preserve">
+    <value>Validating individual files for the application '{0}'.
+		</value>
+  </data>
+  <data name="RES_MESSAGE_ValidatingManifest" xml:space="preserve">
+    <value>Validating the downloaded server Manifest file located at: 
+		'{0}'.
+		</value>
+  </data>
+  <data name="RES_RestartedUpdater" xml:space="preserve">
+    <value>Restarted a DownloaderManager for the application '{0}' at date/time '{1}'.
+		</value>
+  </data>
+  <data name="RES_StopUpdaterInterruptThread" xml:space="preserve">
+    <value>DownloaderManager thread named '{0}' had to be interrupted; it did not respond in the allotted timeout to the stop event.
+		</value>
+  </data>
+  <data name="RES_TieInBits" xml:space="preserve">
+    <value>The BitsDownloader was interrupted during a download by a ThreadInterruptException 
+		while downloading the file '{0}'.  
+		Usually this means the Updater was stopped in the middle of a download job and may simply mean the Service or other 
+		consuming application was stopped manually.
+		</value>
+  </data>
+  <data name="RES_UnableToLoadConfiguration" xml:space="preserve">
+    <value>Unable to load configuration from the XML configuration file: '{0}'.  
+		This can be caused by a number of problems, but the most common problem is an incorrectly configured Updater configuration file.  
+		The most probable sources of error are: missing nodes, incorrect attribute names, white space within attributes or within elements, 
+		white space between elements in the same sub-node, badly formed xml, or xml that does not conform to the ConfigSchema.XSD.</value>
+  </data>
+  <data name="RES_ValidationException" xml:space="preserve">
+    <value>The validation process fails with the following exception message: 
+		'{0}' 
+		validating the file '{1}' for the application '{2}'.</value>
+  </data>
+  <data name="RES_ValidationFailed" xml:space="preserve">
+    <value>The validation process failed for the file '{0}' within the application '{1}'.</value>
+  </data>
+  <data name="ServiceConfigurationMenuItem" xml:space="preserve">
+    <value>Service configuration</value>
+  </data>
+  <data name="ServiceConfigurationNode" xml:space="preserve">
+    <value>Service Configuration</value>
+  </data>
+  <data name="SourceAndDestinationExpected" xml:space="preserve">
+    <value>Expecting source and destination values.</value>
+  </data>
+  <data name="SourceExpected" xml:space="preserve">
+    <value>Expecting the 'source' value</value>
+  </data>
+  <data name="TheManifestIsInvalid" xml:space="preserve">
+    <value>The manifest is not valid. The validation errors are: </value>
+  </data>
+  <data name="TheManifestIsValid" xml:space="preserve">
+    <value>The manifest is valid.</value>
+  </data>
+  <data name="ToolCannotLoadManifestSchema" xml:space="preserve">
+    <value>The tool could not load the manifest schema to perform the validation.</value>
+  </data>
+  <data name="ToolGeneratedError" xml:space="preserve">
+    <value>The tool '{0}' exited with the error code '{1}'.</value>
+  </data>
+  <data name="TypeHelpToGetUsageInformation" xml:space="preserve">
+    <value>Type "help" at any time to get usage information.</value>
+  </data>
+  <data name="UncompressProcessor" xml:space="preserve">
+    <value>Uncompress</value>
+  </data>
+  <data name="UncompressProcessor_CantFindExpandTool" xml:space="preserve">
+    <value>Cannot find the Expand.exe executable.</value>
+  </data>
+  <data name="UncompressProcessor_FailedWithExitCode" xml:space="preserve">
+    <value>Uncompress failed with exit code '{0}'.</value>
+  </data>
+  <data name="UncompressProcessor_ProcessorIsNotConfiguredOptionsEtcNotFound" xml:space="preserve">
+    <value>The processor is not configured. Specify the values for the 'options' and either the 'assemblyName' or 'assemblyFile' attributes.</value>
+  </data>
+  <data name="UncompressProcessor_ProcessorIsNotConfiguredSourceEtcNotFound" xml:space="preserve">
+    <value>Expecting the 'source' value and optionally the 'destination' value.</value>
+  </data>
+  <data name="UncPathUnsupported" xml:space="preserve">
+    <value>path which is not supported.</value>
+  </data>
+  <data name="UnsavedChangesProceedQuestion" xml:space="preserve">
+    <value>There unsaved changes. Do you want to proceed and lose those changes?</value>
+  </data>
+  <data name="UnsavedChangesQuitQuestion" xml:space="preserve">
+    <value>There are unsaved changes. Do you really want to quit?</value>
+  </data>
+  <data name="UpdaterApplicationBlock" xml:space="preserve">
+    <value>Updater Application Block</value>
+  </data>
+  <data name="UpdaterApplicationBlockConfiguration" xml:space="preserve">
+    <value>Updater Application Block Configuration</value>
+  </data>
+  <data name="UpdaterManagerOnlyToBeUsedByWindows" xml:space="preserve">
+    <value>This method is intended to be used only in a windows service environment.</value>
+  </data>
+  <data name="UpdaterManagerUpdateCannotBeCanceled" xml:space="preserve">
+    <value>This update cannot be canceled. The Activation phase has already started.</value>
+  </data>
+  <data name="ValidateHashExceptionMessage" xml:space="preserve">
+    <value>The source and computed file hashes don't match.</value>
+  </data>
+  <data name="ValidateHashProcessor_ExpectingSourceValue" xml:space="preserve">
+    <value>Expecting source value.</value>
+  </data>
+  <data name="ValidateHashProcessor_FileNotFound" xml:space="preserve">
+    <value>The specified file ({0}) cannot be addressed into the manifest.</value>
+  </data>
+  <data name="ValidateHashProcessor_ProcessorIsNotConfiguredSourceEtcNotFound" xml:space="preserve">
+    <value>The processor is not configured. Specify the value for the 'source' attribute.</value>
+  </data>
+  <data name="ValidateHashProcessor_SourceFileNotFound" xml:space="preserve">
+    <value>The source file doesn't exists.</value>
+  </data>
+  <data name="WaitForExitProcessor" xml:space="preserve">
+    <value>Wait For Exit</value>
+  </data>
+  <data name="WelcomeToTheManifestTool" xml:space="preserve">
+    <value>Welcome to the Manifest Editor tool.</value>
+  </data>
+  <data name="YesString" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>
