@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -76,7 +74,7 @@ namespace Xamarin.Windows.Bits.Tests
 			await Task.Run (() => {
 				while (job.Status != DownloadStatus.Transferred)
 					Thread.Sleep (50);
-				}).TimeoutAfter (20);
+			}).TimeoutAfter (20);
 
 			Assert.Equal (DownloadStatus.Transferred, job.Status);
 		}
@@ -88,7 +86,7 @@ namespace Xamarin.Windows.Bits.Tests
 			await Task.Run (() => {
 				while (job.Status != DownloadStatus.Transferred)
 					Thread.Sleep (50);
-				}).TimeoutAfter (20);
+			}).TimeoutAfter (20);
 
 			job = manager.FindJob (job.Id);
 			Assert.Equal (DownloadStatus.Transferred, job.Status);
@@ -109,11 +107,9 @@ namespace Xamarin.Windows.Bits.Tests
 
 		public void Dispose ()
 		{
-			try
-			{
-				job.Cancel();
-			}
-			catch { } 
+			try {
+				job.Cancel ();
+			} catch { }
 		}
 	}
 }

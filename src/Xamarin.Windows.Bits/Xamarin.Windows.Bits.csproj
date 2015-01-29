@@ -59,9 +59,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Microsoft.Bits.nuspec" />
-    <None Include="Microsoft.Bits.snk" />
     <None Include="packages.config" />
+    <None Include="Xamarin.Windows.Bits.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Xamarin.Windows.Bits
 {
 	/// <summary>
@@ -9,11 +6,11 @@ namespace Xamarin.Windows.Bits
 	/// </summary>
 	public enum DownloadStatus
 	{
-        /// <summary>
-        /// Specifies that the job status isn't known yet, such as 
-        /// when the download manager has not been initialized yet.
-        /// </summary>
-        Unknown = -1,
+		/// <summary>
+		/// Specifies that the job status isn't known yet, such as 
+		/// when the download manager has not been initialized yet.
+		/// </summary>
+		Unknown = -1,
 
 		/// <summary>
 		/// Specifies that the job is in the queue and waiting to run. 

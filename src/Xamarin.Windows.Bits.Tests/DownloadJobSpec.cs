@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -21,7 +19,7 @@ namespace Xamarin.Windows.Bits.Tests
 		[Fact]
 		public void when_setting_job_displayname_then_updates_job_and_raises_property_changed ()
 		{
-			var value = Guid.NewGuid().ToString();
+			var value = Guid.NewGuid ().ToString ();
 			var changed = false;
 			job.PropertyChanged += (sender, args) => changed = (args.PropertyName == "DisplayName" ? true : changed);
 
@@ -36,7 +34,7 @@ namespace Xamarin.Windows.Bits.Tests
 		[Fact]
 		public void when_setting_job_description_then_updates_job_and_raises_property_changed ()
 		{
-			var value = Guid.NewGuid().ToString();
+			var value = Guid.NewGuid ().ToString ();
 			var changed = false;
 			job.PropertyChanged += (sender, args) => changed = (args.PropertyName == "Description" ? true : changed);
 
@@ -99,20 +97,20 @@ namespace Xamarin.Windows.Bits.Tests
 			var changed = false;
 			job.PropertyChanged += (sender, args) => changed = (args.PropertyName == "Status" ? true : changed);
 
-			job.Cancel();
+			job.Cancel ();
 
-			Assert.Equal(DownloadStatus.Cancelled, job.Status);
-			Assert.True(changed);
+			Assert.Equal (DownloadStatus.Cancelled, job.Status);
+			Assert.True (changed);
 		}
 
 		[Fact]
 		public void when_cancelling_cancelled_job_then_throws ()
 		{
-			job.Cancel();
+			job.Cancel ();
 
-			var ex = Assert.Throws<InvalidOperationException> (() => job.Cancel());
+			var ex = Assert.Throws<InvalidOperationException> (() => job.Cancel ());
 
-			Assert.Null(ex.InnerException);
+			Assert.Null (ex.InnerException);
 		}
 
 		[Fact]
@@ -126,7 +124,7 @@ namespace Xamarin.Windows.Bits.Tests
 			await Task.Run (() => {
 				while (!called)
 					Thread.Sleep (50);
-				}).TimeoutAfter (20);
+			}).TimeoutAfter (20);
 
 			Assert.True (called);
 		}
@@ -143,7 +141,7 @@ namespace Xamarin.Windows.Bits.Tests
 			await Task.Run (() => {
 				while (!called)
 					Thread.Sleep (50);
-				}).TimeoutAfter (20);
+			}).TimeoutAfter (20);
 
 			Assert.True (called);
 		}
@@ -159,7 +157,7 @@ namespace Xamarin.Windows.Bits.Tests
 			await Task.Run (() => {
 				while (!called)
 					Thread.Sleep (50);
-				}).TimeoutAfter (60);
+			}).TimeoutAfter (60);
 
 			Assert.True (called);
 		}
@@ -175,7 +173,7 @@ namespace Xamarin.Windows.Bits.Tests
 			await Task.Run (() => {
 				while (job.Status != DownloadStatus.Transferred)
 					Thread.Sleep (50);
-				}).TimeoutAfter (60);
+			}).TimeoutAfter (60);
 
 			job.Complete ();
 
@@ -183,18 +181,16 @@ namespace Xamarin.Windows.Bits.Tests
 		}
 
 		[Fact]
-		public void when_completing_non_transferred_job_then_throws()
+		public void when_completing_non_transferred_job_then_throws ()
 		{
 			Assert.Throws<InvalidOperationException> (() => job.Complete ());
 		}
 
 		public void Dispose ()
 		{
-			try
-			{
-				job.Cancel();
-			}
-			catch { } 
+			try {
+				job.Cancel ();
+			} catch { }
 		}
 	}
 }
