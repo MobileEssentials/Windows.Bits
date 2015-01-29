@@ -126,7 +126,7 @@ namespace Microsoft.Bits.Tests
 			await Task.Run (() => {
 				while (!called)
 					Thread.Sleep (50);
-				}).TimeoutAfter (5);
+				}).TimeoutAfter (20);
 
 			Assert.True (called);
 		}
@@ -143,7 +143,7 @@ namespace Microsoft.Bits.Tests
 			await Task.Run (() => {
 				while (!called)
 					Thread.Sleep (50);
-				}).TimeoutAfter (5);
+				}).TimeoutAfter (20);
 
 			Assert.True (called);
 		}
@@ -159,7 +159,7 @@ namespace Microsoft.Bits.Tests
 			await Task.Run (() => {
 				while (!called)
 					Thread.Sleep (50);
-				}).TimeoutAfter (20);
+				}).TimeoutAfter (60);
 
 			Assert.True (called);
 		}
@@ -175,7 +175,7 @@ namespace Microsoft.Bits.Tests
 			await Task.Run (() => {
 				while (job.Status != DownloadStatus.Transferred)
 					Thread.Sleep (50);
-				}).TimeoutAfter (20);
+				}).TimeoutAfter (60);
 
 			job.Complete ();
 

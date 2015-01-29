@@ -6,7 +6,7 @@ deploy:
   - provider: NuGet
     api_key:
       secure: zfW76Poy+HwwoepzS5TFy+6RJdGaS8tOCMRRv1yvPGe7UCtMn4KDAm3rskXgrPas
-    artifact: /.*\.nupkg/
+    artifact: Packages
     on:
       branch: master
       appveyor_repo_tag: true
@@ -15,7 +15,7 @@ deploy:
     release: $(APPVEYOR_REPO_TAG_NAME)
     auth_token:
       secure: t2Y4Mu9YOZw+8D4IQeTYJ+Sl3M3NFIJMk5tBvPz1fx8UHl1zroywalDCyi2cWx6/
-    artifact: /.*\.nupkg/
+    artifact: Packages
     draft: false
     prerelease: false
     on:
