@@ -21,6 +21,7 @@ namespace Microsoft.Bits
 		/// <param name="remoteUrl">The remote URL.</param>
 		/// <param name="localFile">The local file.</param>
 		/// <param name="priority">The priority.</param>
+		/// <exception cref="System.InvalidOperationException">An unexpected exception occurred trying to create the job.</exception>
         public IDownloadJob CreateJob(string displayName, string remoteUrl, string localFile, DownloadPriority priority = DownloadPriority.Normal)
         {
             if (!Path.IsPathRooted(localFile))
@@ -70,6 +71,12 @@ namespace Microsoft.Bits
 
                 return job;
             }
+			catch (COMException cex)
+			{
+                string error;
+                bitsManager.GetErrorDescription(cex.ErrorCode, 1033, out error);
+                throw new InvalidOperationException(error, cex);
+			}
             finally
             {
                 if (bitsJob != null)
@@ -86,7 +93,7 @@ namespace Microsoft.Bits
 		/// <returns>
 		/// The job or <see langword="null" /> if not found.
 		/// </returns>
-		/// <exception cref="System.ArgumentException">An unexpected exception occurred trying to find the given job.</exception>
+		/// <exception cref="System.InvalidOperationException">An unexpected exception occurred trying to find the given job.</exception>
         public IDownloadJob FindJob(Guid id)
         {
             IBackgroundCopyManager bitsManager = null;
@@ -109,7 +116,7 @@ namespace Microsoft.Bits
 
                 string error;
                 bitsManager.GetErrorDescription(cex.ErrorCode, 1033, out error);
-                throw new ArgumentException(error);
+                throw new InvalidOperationException(error, cex);
             }
             finally
             {

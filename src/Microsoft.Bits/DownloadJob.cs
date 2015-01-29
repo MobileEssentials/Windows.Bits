@@ -159,6 +159,9 @@ namespace Microsoft.Bits
 
         public void Cancel()
         {
+			if (status == DownloadStatus.Cancelled)
+				throw new InvalidOperationException ("Job has already been cancelled.");
+
             BitsAction(job => job.Cancel());
             // This might be needed if the job was never started in the first place.
             Status = DownloadStatus.Cancelled;
@@ -201,6 +204,12 @@ namespace Microsoft.Bits
                 if (bitsJob != null)
                     action(bitsJob);
             }
+			catch (COMException cex)
+			{
+                string error;
+                bitsManager.GetErrorDescription(cex.ErrorCode, 1033, out error);
+                throw new InvalidOperationException(error, cex);
+			}
             finally
             {
                 if (bitsJob != null)
@@ -262,17 +271,13 @@ namespace Microsoft.Bits
             // If we've got the native error, extract values and populate the 
             // status message.
             if (error != null)
-            {
                 StatusMessage = FormatError(error);
-            }
 
             BG_JOB_STATE state;
             bitsJob.GetState(out state);
             if (state != BG_JOB_STATE.BG_JOB_STATE_ACKNOWLEDGED &&
                 state != BG_JOB_STATE.BG_JOB_STATE_CANCELLED)
-            {
                 bitsJob.Cancel();
-            }
 
             Status = DownloadStatus.Error;
         }

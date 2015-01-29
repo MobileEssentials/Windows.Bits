@@ -38,8 +38,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DownloadJobSpec.cs" />
     <Compile Include="DownloadManagerSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeoutExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.Bits\Microsoft.Bits.csproj">
