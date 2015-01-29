@@ -10,17 +10,6 @@ deploy:
     on:
       branch: master
       appveyor_repo_tag: true
-
-  - provider: GitHub
-    release: $(APPVEYOR_REPO_TAG_NAME)
-    auth_token:
-      secure: t2Y4Mu9YOZw+8D4IQeTYJ+Sl3M3NFIJMk5tBvPz1fx8UHl1zroywalDCyi2cWx6/
-    artifact: Packages
-    draft: false
-    prerelease: false
-    on:
-      branch: master
-      appveyor_repo_tag: true
       
 nuget:
   project_feed: true
