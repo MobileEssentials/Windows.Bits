@@ -15,10 +15,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
-	<DocumentationFile>bin\$(AssemblyName).xml</DocumentationFile>
+    <DocumentationFile>bin\$(AssemblyName).xml</DocumentationFile>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <!--<TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>DEBUG;TRACE</DefineConstants>

@@ -8,8 +8,19 @@ using System.Runtime.InteropServices;
 
 namespace Microsoft.Bits
 {
+	/// <summary>
+	/// Main implementation of the <see cref="IDownloadManager"/> interface using 
+	/// the native BITS.
+	/// </summary>
     public class DownloadManager : IDownloadManager
     {
+		/// <summary>
+		/// Creates a new transfer job.
+		/// </summary>
+		/// <param name="displayName">The display name.</param>
+		/// <param name="remoteUrl">The remote URL.</param>
+		/// <param name="localFile">The local file.</param>
+		/// <param name="priority">The priority.</param>
         public IDownloadJob CreateJob(string displayName, string remoteUrl, string localFile, DownloadPriority priority = DownloadPriority.Normal)
         {
             if (!Path.IsPathRooted(localFile))
@@ -68,6 +79,14 @@ namespace Microsoft.Bits
             }
         }
 
+		/// <summary>
+		/// Attemps to find the job with the given identifier.
+		/// </summary>
+		/// <param name="id">The job's identifier.</param>
+		/// <returns>
+		/// The job or <see langword="null" /> if not found.
+		/// </returns>
+		/// <exception cref="System.ArgumentException">An unexpected exception occurred trying to find the given job.</exception>
         public IDownloadJob FindJob(Guid id)
         {
             IBackgroundCopyManager bitsManager = null;
@@ -101,6 +120,9 @@ namespace Microsoft.Bits
             }
         }
 
+		/// <summary>
+		/// Gets all the jobs currently being managed with the system.
+		/// </summary>
         public IEnumerable<IDownloadJob> GetAll()
         {
             var jobs = new List<DownloadJob>();

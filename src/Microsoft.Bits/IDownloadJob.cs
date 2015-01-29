@@ -3,12 +3,38 @@ using System.ComponentModel;
 
 namespace Microsoft.Bits
 {
+	/// <summary>
+	/// Interface implemented by transfer jobs.
+	/// </summary>
+	/// <remarks>
+	/// Supports property change notifications for easy display on UIs.
+	/// </remarks>
     public interface IDownloadJob : INotifyPropertyChanged
     {
+		/// <summary>
+		/// Occurs when the job was cancelled by invoking <see cref="Cancel"/>.
+		/// </summary>
         event EventHandler Cancelled;
+
+		/// <summary>
+		/// Occurs when the job was completed by invoking <see cref="Complete"/> once the 
+		/// payload has been fully transferred.
+		/// </summary>
         event EventHandler Completed;
+
+		/// <summary>
+		/// Occurs when the transfer job was suspended by invoking <see cref="Suspend"/>.
+		/// </summary>
         event EventHandler Suspended;
+
+		/// <summary>
+		/// Occurs when the transfer job was resumed by invoking <see cref="Resume"/>.
+		/// </summary>
         event EventHandler Resumed;
+
+		/// <summary>
+		/// Occurs when the job has finished transferring all bytes from the <see cref="RemoteUrl"/>.
+		/// </summary>
         event EventHandler Transferred;
 
 		/// <summary>
@@ -57,7 +83,7 @@ namespace Microsoft.Bits
         /// Set the retry period to 0 to prevent retries and to force the job into 
         /// the <see cref="DownloadStatus.Error"/> state for all errors. If the retry period value 
         /// exceeds the JobInactivityTimeout Group Policy value (90-day default), 
-        /// BITS cancels the job after the policy value is exceeded.</param>
+        /// BITS cancels the job after the policy value is exceeded.
         /// </remarks>
         uint NoProgressTimeout { get; set; }
 
@@ -88,27 +114,27 @@ namespace Microsoft.Bits
         ulong BytesTotal { get; }
 
 		/// <summary>
-		/// Number of bytes transferred
+		/// Number of bytes transferred.
 		/// </summary>
         ulong BytesTransferred { get; }
         
 		/// <summary>
-		/// Cancels the job and removes temporary files from the client
+		/// Cancels the job and removes temporary files from the client.
 		/// </summary>
         void Cancel();
 
 		/// <summary>
-		/// Ends the job and saves the transferred files on the client
+		/// Ends the job and saves the transferred files on the client.
 		/// </summary>
         void Complete();
 
 		/// <summary>
-		/// Restarts a suspended job
+		/// Restarts a suspended job.
 		/// </summary>
         void Resume();
 
 		/// <summary>
-		/// Pauses the job
+		/// Pauses the job.
 		/// </summary>
         void Suspend();
     }

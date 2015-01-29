@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Microsoft.Bits
 {
+	/// <summary>
+	/// Priority of the transfer job.
+	/// </summary>
     public enum DownloadPriority
     {
         /// <summary>

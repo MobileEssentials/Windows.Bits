@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Microsoft.Bits
 {
+	/// <summary>
+	/// Transfer job status.
+	/// </summary>
 	public enum DownloadStatus
 	{
         /// <summary>
