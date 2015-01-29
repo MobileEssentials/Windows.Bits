@@ -40,9 +40,22 @@
 		<Solution Include="$(Solution)" Condition="'$(Solution)' != ''">
 			<AdditionalProperties>Configuration=$(Configuration);TrackFileAccess=$(TrackFileAccess)</AdditionalProperties>
 		</Solution>
-		
+
+		<NuGet Include="src\Microsoft.Bits\Microsoft.Bits.nuspec" />
+
 	</ItemGroup>
 	
 	<Import Project="build\build.targets" />
 
+	<PropertyGroup>
+		<BuildPackagesDependsOn>
+			$(BuildPackagesDependsOn);
+			GitLink
+		</BuildPackagesDependsOn>
+	</PropertyGroup>
+
+	<Target Name="GitLink">
+		<Exec Command='packages\gitlink\lib\net45\GitLink.exe "$(MSBuildThisFileDirectory.TrimEnd(\))" -u https://github.com/xamarin/Microsoft.Bits -c $(Configuration) -ignore Microsoft.Bits.Tests' />
+	</Target>
+	
 </Project>

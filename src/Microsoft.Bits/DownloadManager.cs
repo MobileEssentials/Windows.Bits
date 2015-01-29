@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.InteropServices;
 
@@ -105,7 +103,7 @@ namespace Microsoft.Bits
 
         public IEnumerable<IDownloadJob> GetAll()
         {
-            List<DownloadJob> jobs = new List<DownloadJob>();
+            var jobs = new List<DownloadJob>();
             IBackgroundCopyManager bitsManager = null;
             IEnumBackgroundCopyJobs enumJobs = null;
 
@@ -134,7 +132,7 @@ namespace Microsoft.Bits
                         Marshal.ReleaseComObject(bitsJob);
                 }
 
-                return jobs;
+                return jobs.ToArray();
             }
             finally
             {

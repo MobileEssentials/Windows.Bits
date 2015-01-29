@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2AF55F73-4FE0-46B1-B5C4-534F028A90C1}"
 	ProjectSection(SolutionItems) = preProject
 		..\build.proj = ..\build.proj
+		..\build\build.targets = ..\build\build.targets
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Bits", "Microsoft.Bits\Microsoft.Bits.csproj", "{6C281D3D-1465-4462-9FF4-B3D52C87FA13}"
