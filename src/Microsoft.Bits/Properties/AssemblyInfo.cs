@@ -2,16 +2,13 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Microsoft.Bits")]
+[assembly: AssemblyTitle("Microsoft.Bits by Xamarin")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Microsoft.Bits")]
+[assembly: AssemblyCompany("Xamarin Inc.")]
+[assembly: AssemblyProduct("Microsoft.Bits by Xamarin")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
-
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
