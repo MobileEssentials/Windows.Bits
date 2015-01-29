@@ -1,5 +1,6 @@
 build:
   project: build.proj
+  verbosity: normal
 
 deploy:
   - provider: NuGet
