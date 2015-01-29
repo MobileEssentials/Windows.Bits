@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Microsoft.Bits
+namespace Xamarin.Windows.Bits
 {
 	/// <summary>
 	/// Interface implemented by transfer jobs.

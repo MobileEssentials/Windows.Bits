@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Microsoft.Bits</id>
+    <id>Xamarin.Windows.Bits</id>
     <version>0.1</version>
-    <title>Microsoft Background Intelligent Transfer Service</title>
-    <authors>Daniel Cazzulino</authors>
+    <title>Xamarin Windows BITS Bindings</title>
+    <authors>Xamarin Inc.</authors>
     <owners>Xamarin</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Managed and testable wrapper of Microsoft BITS technology.</description>
-    <tags>bits downloader microsoft</tags>
-    <releaseNotes>Version 0.1
+    <description>Managed and testable .NET bindings for Microsoft Windows Background Intelligent Transfer Service (BITS) technology.</description>
+    <tags>bits downloader microsoft windows</tags>
+    <releaseNotes>Version 0.2
     
 * Download API support
 </releaseNotes>
   </metadata>
   <files>
-    <file src="bin\Microsoft.Bits.dll" target="lib\net35\Microsoft.Bits.dll" />
-    <file src="bin\Microsoft.Bits.xml" target="lib\net35\Microsoft.Bits.xml" />
-    <file src="bin\Microsoft.Bits.pdb" target="lib\net35\Microsoft.Bits.pdb" />
+    <file src="bin\Xamarin.Windows.Bits.dll" target="lib\net35\Xamarin.Windows.Bits.dll" />
+    <file src="bin\Xamarin.Windows.Bits.xml" target="lib\net35\Xamarin.Windows.Bits.xml" />
+    <file src="bin\Xamarin.Windows.Bits.pdb" target="lib\net35\Xamarin.Windows.Bits.pdb" />
   </files>
 </package>

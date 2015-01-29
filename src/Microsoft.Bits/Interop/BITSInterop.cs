@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 
 
-namespace Microsoft.Bits.Interop
+namespace Xamarin.Windows.Bits.Interop
 {
 	// InteropBits.cs
 	// COM Interop C# classes for accessing BITS API.

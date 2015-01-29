@@ -41,7 +41,7 @@
 			<AdditionalProperties>Configuration=$(Configuration);TrackFileAccess=$(TrackFileAccess)</AdditionalProperties>
 		</Solution>
 
-		<NuGet Include="src\Microsoft.Bits\Microsoft.Bits.nuspec" />
+		<NuGet Include="src\Xamarin.Windows.Bits\Xamarin.Windows.Bits.nuspec" />
 
 	</ItemGroup>
 	
@@ -55,7 +55,13 @@
 	</PropertyGroup>
 
 	<Target Name="GitLink">
-		<Exec Command='packages\gitlink\lib\net45\GitLink.exe "$(MSBuildThisFileDirectory.TrimEnd(\))" -u https://github.com/xamarin/Microsoft.Bits -c $(Configuration) -ignore Microsoft.Bits.Tests' />
+		<MSBuild Projects="build\packages\SemanticGit\build\SemanticGit.targets"
+				 Targets="SemanticGit:GetCommit"
+				 Properties="GenerateAssemblyInfo=false">
+			<Output PropertyName="Commit" TaskParameter="TargetOutputs"/>
+		</MSBuild>
+			
+		<Exec Command='packages\gitlink\lib\net45\GitLink.exe "$(MSBuildThisFileDirectory.TrimEnd(\))" -u https://github.com/xamarin/Xamarin.Windows.Bits -c $(Configuration) -s $(Commit) -ignore Xamarin.Windows.Bits.Tests' />
 	</Target>
 	
 </Project>

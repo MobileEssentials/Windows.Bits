@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Microsoft.Bits
+namespace Xamarin.Windows.Bits
 {
 	/// <summary>
 	/// Transfer job status.

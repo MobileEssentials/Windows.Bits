@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Bits
+namespace Xamarin.Windows.Bits
 {
 	/// <summary>
 	/// Main API for Microsoft BITS, exposing a way to create and retrieve jobs managed by the system.

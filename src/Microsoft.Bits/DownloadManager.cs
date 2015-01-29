@@ -1,4 +1,4 @@
-﻿using Microsoft.Bits.Interop;
+﻿using Xamarin.Windows.Bits.Interop;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -6,7 +6,7 @@ using System.Text;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.Bits
+namespace Xamarin.Windows.Bits
 {
 	/// <summary>
 	/// Main implementation of the <see cref="IDownloadManager"/> interface using 
