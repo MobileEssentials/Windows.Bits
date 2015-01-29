@@ -27,6 +27,7 @@
 	<PropertyGroup>
 		<Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
 		<TrackFileAccess>false</TrackFileAccess>
+		<VersionFormat>MAJOR.MINOR.PATCH-PRE</VersionFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
