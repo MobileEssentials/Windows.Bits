@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\build\build.targets = ..\build\build.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Windows.Bits", "Microsoft.Bits\Xamarin.Windows.Bits.csproj", "{6C281D3D-1465-4462-9FF4-B3D52C87FA13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Windows.Bits", "Xamarin.Windows.Bits\Xamarin.Windows.Bits.csproj", "{6C281D3D-1465-4462-9FF4-B3D52C87FA13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Windows.Bits.Tests", "Microsoft.Bits.Tests\Xamarin.Windows.Bits.Tests.csproj", "{3AA0FB13-2718-45E2-A2B1-F159218B4B33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Windows.Bits.Tests", "Xamarin.Windows.Bits.Tests\Xamarin.Windows.Bits.Tests.csproj", "{3AA0FB13-2718-45E2-A2B1-F159218B4B33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

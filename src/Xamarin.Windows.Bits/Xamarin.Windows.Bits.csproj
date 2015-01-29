@@ -31,7 +31,7 @@
     <DocumentationFile>bin\Xamarin.Windows.Bits.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Microsoft.Bits.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Xamarin.Windows.Bits.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>

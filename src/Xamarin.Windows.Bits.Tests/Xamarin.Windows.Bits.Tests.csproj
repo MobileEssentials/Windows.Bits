@@ -44,7 +44,7 @@
     <Compile Include="TimeoutExtension.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Microsoft.Bits\Xamarin.Windows.Bits.csproj">
+    <ProjectReference Include="..\Xamarin.Windows.Bits\Xamarin.Windows.Bits.csproj">
       <Project>{6c281d3d-1465-4462-9ff4-b3d52c87fa13}</Project>
       <Name>Xamarin.Windows.Bits</Name>
     </ProjectReference>
