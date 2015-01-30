@@ -3,7 +3,7 @@ Managed and testable .NET bindings for Microsoft Windows Background Intelligent 
 
 ## Installation
 
-`Install-Package Xamarin.Windows.Bits`
+`Install-Package Xamarin.Windows.Bits -pre`
 
 To use the latest CI packages, add a package source in the IDE with the url: `https://ci.appveyor.com/nuget/microsoft-bits-agrpgkyfuf4g`
 
