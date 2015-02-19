@@ -7,8 +7,8 @@
     <ProjectGuid>{3AA0FB13-2718-45E2-A2B1-F159218B4B33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Xamarin.Windows.Bits.Tests</RootNamespace>
-    <AssemblyName>Xamarin.Windows.Bits.Tests</AssemblyName>
+    <RootNamespace>Windows.Bits.Tests</RootNamespace>
+    <AssemblyName>Windows.Bits.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,9 +44,9 @@
     <Compile Include="TimeoutExtension.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Windows.Bits\Xamarin.Windows.Bits.csproj">
+    <ProjectReference Include="..\Windows.Bits\Windows.Bits.csproj">
       <Project>{6c281d3d-1465-4462-9ff4-b3d52c87fa13}</Project>
-      <Name>Xamarin.Windows.Bits</Name>
+      <Name>Windows.Bits</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

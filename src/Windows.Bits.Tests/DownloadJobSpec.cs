@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Xamarin.Windows.Bits.Tests
+namespace Windows.Bits.Tests
 {
 	public class DownloadJobSpec : IDisposable
 	{
@@ -13,7 +13,7 @@ namespace Xamarin.Windows.Bits.Tests
 		public DownloadJobSpec ()
 		{
 			manager = new DownloadManager ();
-			job = manager.CreateJob ("name", "http://xvs.xamarin.com/Tests/Xamarin.Windows.Bits.Tests-DO-NOT-DELETE.bin", "blob.bin");
+			job = manager.CreateJob ("name", "http://xvs.xamarin.com/Tests/Windows.Bits.Tests-DO-NOT-DELETE.bin", "blob.bin");
 		}
 
 		[Fact]

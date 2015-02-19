@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Xamarin.Windows.Bits.Tests
+namespace Windows.Bits.Tests
 {
 	public class DownloadManagerSpec : IDisposable
 	{
@@ -15,7 +15,7 @@ namespace Xamarin.Windows.Bits.Tests
 		public DownloadManagerSpec ()
 		{
 			manager = new DownloadManager ();
-			job = manager.CreateJob ("name", "http://xvs.xamarin.com/Tests/Xamarin.Windows.Bits.Tests-DO-NOT-DELETE.bin", "blob.bin");
+			job = manager.CreateJob ("name", "http://xvs.xamarin.com/Tests/Windows.Bits.Tests-DO-NOT-DELETE.bin", "blob.bin");
 		}
 
 		[Fact]
@@ -23,7 +23,7 @@ namespace Xamarin.Windows.Bits.Tests
 		{
 			Assert.NotEqual (Guid.Empty, job.Id);
 			Assert.Equal ("name", job.DisplayName);
-			Assert.Equal ("http://xvs.xamarin.com/Tests/Xamarin.Windows.Bits.Tests-DO-NOT-DELETE.bin", job.RemoteUrl);
+			Assert.Equal ("http://xvs.xamarin.com/Tests/Windows.Bits.Tests-DO-NOT-DELETE.bin", job.RemoteUrl);
 			Assert.Equal ("blob.bin", Path.GetFileName (job.LocalFile));
 		}
 

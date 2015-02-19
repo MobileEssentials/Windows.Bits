@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using Xamarin.Windows.Bits.Interop;
+using Windows.Bits.Interop;
 
-namespace Xamarin.Windows.Bits
+namespace Windows.Bits
 {
 	internal class DownloadJob : IDownloadJob, INotifyPropertyChanged, IBackgroundCopyCallback
 	{

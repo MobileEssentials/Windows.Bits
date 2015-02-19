@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
-using Xamarin.Windows.Bits.Interop;
+using Windows.Bits.Interop;
 
-namespace Xamarin.Windows.Bits
+namespace Windows.Bits
 {
 	/// <summary>
 	/// Main implementation of the <see cref="IDownloadManager"/> interface using 

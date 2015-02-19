@@ -1,5 +1,5 @@
 ﻿
-namespace Xamarin.Windows.Bits
+namespace Windows.Bits
 {
 	/// <summary>
 	/// Transfer job status.

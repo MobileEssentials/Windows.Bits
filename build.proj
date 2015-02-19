@@ -42,7 +42,7 @@
 			<AdditionalProperties>Configuration=$(Configuration);TrackFileAccess=$(TrackFileAccess)</AdditionalProperties>
 		</Solution>
 
-		<NuGet Include="src\Xamarin.Windows.Bits\Xamarin.Windows.Bits.nuspec" />
+		<NuGet Include="src\Windows.Bits\Windows.Bits.nuspec" />
 
 	</ItemGroup>
 	
@@ -62,7 +62,7 @@
 			<Output PropertyName="Commit" TaskParameter="TargetOutputs"/>
 		</MSBuild>
 			
-		<Exec Command='packages\gitlink\lib\net45\GitLink.exe "$(MSBuildThisFileDirectory.TrimEnd(\))" -u https://github.com/xamarin/Xamarin.Windows.Bits -c $(Configuration) -s $(Commit) -ignore Xamarin.Windows.Bits.Tests' />
+		<Exec Command='packages\gitlink\lib\net45\GitLink.exe "$(MSBuildThisFileDirectory.TrimEnd(\))" -u https://github.com/MobileEssentials/Windows.Bits -c $(Configuration) -s $(Commit) -ignore Windows.Bits.Tests' />
 	</Target>
 	
 </Project>

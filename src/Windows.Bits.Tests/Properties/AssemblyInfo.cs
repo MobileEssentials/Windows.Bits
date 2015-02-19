@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 
-[assembly: AssemblyTitle("Xamarin.Windows.Bits.Tests")]
+[assembly: AssemblyTitle("Windows.Bits.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Xamarin.Windows.Bits.Tests")]
+[assembly: AssemblyCompany("Mobile Essentials")]
+[assembly: AssemblyProduct("Windows.Bits.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]

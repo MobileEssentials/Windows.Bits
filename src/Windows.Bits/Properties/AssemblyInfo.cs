@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Xamarin.Windows.Bits by Xamarin")]
+[assembly: AssemblyTitle("Windows.Bits by Mobile Essentials")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Xamarin Inc.")]
-[assembly: AssemblyProduct("Xamarin.Windows.Bits by Xamarin")]
+[assembly: AssemblyCompany("Mobile Essentials")]
+[assembly: AssemblyProduct("Windows.Bits by Mobile Essentials")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
